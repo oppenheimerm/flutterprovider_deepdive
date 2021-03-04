@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterprovider_deepdive/models/cart.dart';
+import 'package:flutterprovider_deepdive/models/favorite.dart';
+import 'package:flutterprovider_deepdive/pages/home/widgets/favoritewidget.dart';
 import 'file:///C:/Users/moppenheimer/repo/android/flutterprovider_deepdive/lib/pages/home/widgets/cartwidget.dart';
 import 'file:///C:/Users/moppenheimer/repo/android/flutterprovider_deepdive/lib/pages/home/widgets/searchbar.dart';
 import 'package:provider/provider.dart';
@@ -22,6 +24,7 @@ class Header extends StatelessWidget {
     //  grab an instance of [Cart] in our widget and access
     //  the ‘count’.
     Cart _cartData = Provider.of<Cart>(context);
+    Favorites _favoritesData = Provider.of<Favorites>(context);
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 28.0, vertical: 16.0),
       width: double.infinity,
@@ -36,6 +39,7 @@ class Header extends StatelessWidget {
                 style: TextStyle(fontSize: fontSize, height:height),
               ),
               /* get count from cart Cart(),*/
+              FavoriteWidget(favorites: _favoritesData),
               CartWidget(cart: _cartData)
             ],
           ),

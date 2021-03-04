@@ -67,10 +67,24 @@ class _ProductCardState extends State<ProductCard> {
                         favorites.addFavorite(widget.product);
                       });
                     },
-                    icon: Icon(
-                      Icons.bookmark,
-                      size: 40.0,
-                      color: favorites.isFavorite(widget.product.id) ? primaryColour : Colors.white,
+                    icon: Container(
+                      width: 50.0,
+                      height: 50.0,
+                      decoration: BoxDecoration(
+                        color: Colors.transparent,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black.withOpacity(0.2),
+                              offset: Offset.zero,
+                              blurRadius: 12.0)
+                        ],
+                      ),
+                      child: Icon(
+                        Icons.bookmark,
+                        size: 40.0,
+                        color: favorites.isFavorite(widget.product.id) ? Colors.red : Colors.grey[850],
+
+                      ),
                     ),
                   ),
                 ),
