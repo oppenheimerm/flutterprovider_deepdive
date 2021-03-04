@@ -3,13 +3,14 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutterprovider_deepdive/models/Initdatamodel.dart';
 import 'package:flutterprovider_deepdive/models/category.dart';
-import 'package:flutterprovider_deepdive/models/editorpick.dart';
 import 'package:flutterprovider_deepdive/models/editorspick_card.dart';
 import 'package:flutterprovider_deepdive/models/trending.dart';
-import 'file:///C:/Users/moppenheimer/repo/android/flutterprovider_deepdive/lib/pages/home/widgets/category_card.dart';
-import 'file:///C:/Users/moppenheimer/repo/android/flutterprovider_deepdive/lib/pages/home/widgets/header.dart';
-import 'file:///C:/Users/moppenheimer/repo/android/flutterprovider_deepdive/lib/pages/home/widgets/productcard.dart';
-import 'file:///C:/Users/moppenheimer/repo/android/flutterprovider_deepdive/lib/pages/home/widgets/sectiontitle.dart';
+import 'package:flutterprovider_deepdive/pages/home/widgets/bottomnavigation.dart';
+import 'package:flutterprovider_deepdive/pages/home/widgets/category_card.dart';
+import 'package:flutterprovider_deepdive/pages/home/widgets/header.dart';
+import 'package:flutterprovider_deepdive/pages/home/widgets/productcard.dart';
+import 'package:flutterprovider_deepdive/pages/home/widgets/sectiontitle.dart';
+
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -32,6 +33,7 @@ class _HomePageState extends State<HomePage> {
     var trending = Provider.of<InitDataModel>(context)?.trending;
     
     return Scaffold(
+      bottomNavigationBar: AppBottomNavigation(),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
