@@ -1,0 +1,26 @@
+original UI:
+https://www.youtube.com/watch?v=VcPvLKQGgBI&t=819s&ab_channel=DaveTheDev
+https://www.uplabs.com/posts/furniture-app-eb441bf3-ec05-463b-928f-906e37d6a9f0
+https://github.com/davethedevofficial/furniture-app
+
+Product Card
+https://dribbble.com/shots/11207641-Travel-service-Mobile-App
+https://github.com/lucianefalcao/travel_service_ui
+https://www.youtube.com/watch?v=fJUrZeKG3aA&t=1141s&ab_channel=Lu
+
+
+
+https://codetober.com/flutter-provider-examples/
+https://flutterbyexample.com/lesson/the-most-basic-example-using-provider
+
+
+//  shopping cart
+https://www.youtube.com/watch?v=iJ8XV2upB-U&ab_channel=DreamWalker
+https://dribbble.com/shots/15046054-Bicycle-Rental-Interaction
+
+https://www.youtube.com/watch?v=GwhpedXmc4M&t=39s&ab_channel=TheFlutterWay
+
+
+https://github.com/theindianappguy/discounttour/blob/master/lib/views/home.dart
+https://user-images.githubusercontent.com/55942632/81511122-9ecc6800-9334-11ea-9270-3148f639793b.png
+https://www.youtube.com/watch?v=PKEam1KpeWk&t=17s&ab_channel=SanskarTiwari
